@@ -1,2 +1,0 @@
-# Devops-Scripts
-DevopsProject2
