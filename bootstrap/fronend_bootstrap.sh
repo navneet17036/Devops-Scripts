@@ -17,4 +17,4 @@ sudo aws ecr get-login-password --region $REGION | sudo docker login --username 
 
 sudo docker pull $ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com/$REPO_NAME:latest
 
-sudo docker run -d -p 80:80 $ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com/$REPO_NAME:latest
+sudo docker run -d --network host -p 80:80 $ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com/$REPO_NAME:latest
